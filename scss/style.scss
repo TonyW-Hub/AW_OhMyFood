@@ -1,0 +1,206 @@
+@import "./partials/base/typographie";
+@import "./partials/utils/variables";
+@import "./partials/utils/mixins";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    box-shadow: $box-shadow;
+    img {
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $bg-mid;
+    color: $color-light;
+    padding: 10px;
+    font-size: 1.1rem;
+    span {
+        padding-left: 20px;
+    }
+}
+
+.exploration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px 50px 20px;
+    background: $bg-light;
+    &__title {
+        padding-bottom: 15px;
+    }
+    &__txt {
+        padding-bottom: 30px;
+        color: $color-light;
+    }
+    &__btn {
+        border: none;
+        border-radius: 2rem;
+        padding: 1rem; 
+        font-size: 1.1rem;
+        color: $color-white;
+        background: linear-gradient($color-secondary, $color-primary);
+        box-shadow: $box-shadow;
+        cursor: pointer;
+    }
+}
+
+.function {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0% 3%;
+    padding: 40px 0px;
+    position: relative;
+    h1 {
+        @include title;
+    }
+    &__pad {
+        display: flex;
+        align-items: center;
+        width: 90%;
+        background: $bg-light;
+        padding: 30px 0px;
+        margin: 10px 0px;
+        border-radius: 1rem;
+        box-shadow: $shadow-pad;
+        text-decoration: none;
+        color: black;
+        &--number {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 7px;
+            border-radius: 100%;
+            width: 25px;
+            height: 25px;
+            font-size: 1rem;
+            background: $color-primary;
+            color: $color-white;
+        }
+        &--icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+            width: 30px;
+            padding-left: 45px;
+            color: $color-light;
+        }
+        &--txt {
+            font-size: 1.2rem;
+            font-weight: 500;
+            padding-left: 30px;
+        }
+        &:hover {
+            background: lighten($color-primary, 35%);
+            i {
+                color: $color-primary;
+            }
+        }
+    }
+}
+
+.restaurants {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    margin: 0% 3%;
+    background-color: $bg-light;
+    h1 {
+        @include title;
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 20px;
+        background-color: $color-white;
+        border-radius: 10px;
+        box-shadow: $shadow-pad;
+        color: black;
+        text-decoration: none;
+        img {
+            object-fit: cover;
+            width: 335px;
+            height: 190px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .new {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 15px;
+            right: 15px;
+            background: $color-tertiary;
+            color: darken($color-tertiary, 35%);
+            font-weight: bold;
+            padding: 5px;
+            border-radius: 3px;
+            box-shadow: $box-shadow;
+        }
+        h2 {
+            font-size: 1.1rem;
+            padding: 10px 0px 0px 10px;
+        }
+        p {
+            padding: 5px 0px 10px 10px;
+            font-weight: lighter;
+        }
+        i {
+            position: absolute;
+            font-size: 20px;
+            bottom: 23px;
+            right: 25px;
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: $bg-dark;
+    color: $color-white;
+    padding: 10px 0px 20px 0px;
+    img {
+        width: 150px;
+        padding: 20px;
+        filter: invert(100%);
+    }
+    ul {
+        padding-left: 20px;
+        list-style-type: none;
+        li {
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+            i {
+                display: inline-block;
+                padding-right: 10px;
+                font-size: 15px;
+                width: 30px;
+            }
+        }
+    }
+}

@@ -1,0 +1,212 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  box-shadow: 1px 1px 3px grey;
+}
+.header img {
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(221, 220, 220, 0.404);
+  color: rgba(0, 0, 0, 0.616);
+  padding: 10px;
+  font-size: 1.1rem;
+}
+.location span {
+  padding-left: 20px;
+}
+
+.exploration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px 50px 20px;
+  background: rgba(221, 220, 220, 0.205);
+}
+.exploration__title {
+  padding-bottom: 15px;
+}
+.exploration__txt {
+  padding-bottom: 30px;
+  color: rgba(0, 0, 0, 0.616);
+}
+.exploration__btn {
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem;
+  font-size: 1.1rem;
+  color: white;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 1px 1px 3px grey;
+  cursor: pointer;
+}
+
+.function {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0% 3%;
+  padding: 40px 0px;
+  position: relative;
+}
+.function h1 {
+  padding-bottom: 20px;
+  align-self: flex-start;
+  padding-left: 10px;
+}
+.function__pad {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  background: rgba(221, 220, 220, 0.205);
+  padding: 30px 0px;
+  margin: 10px 0px;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 10px #b8b8b8;
+  text-decoration: none;
+  color: black;
+}
+.function__pad--number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 7px;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  font-size: 1rem;
+  background: #9356DC;
+  color: white;
+}
+.function__pad--icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  width: 30px;
+  padding-left: 45px;
+  color: rgba(0, 0, 0, 0.616);
+}
+.function__pad--txt {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-left: 30px;
+}
+.function__pad:hover {
+  background: #f2eafb;
+}
+.function__pad:hover i {
+  color: #9356DC;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  margin: 0% 3%;
+  background-color: rgba(221, 220, 220, 0.205);
+}
+.restaurants h1 {
+  padding-bottom: 20px;
+  align-self: flex-start;
+  padding-left: 10px;
+}
+.restaurants__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px #b8b8b8;
+  color: black;
+  text-decoration: none;
+}
+.restaurants__card img {
+  object-fit: cover;
+  width: 335px;
+  height: 190px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.restaurants__card .new {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 15px;
+  right: 15px;
+  background: #99E2D0;
+  color: #2c9c81;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px grey;
+}
+.restaurants__card h2 {
+  font-size: 1.1rem;
+  padding: 10px 0px 0px 10px;
+}
+.restaurants__card p {
+  padding: 5px 0px 10px 10px;
+  font-weight: lighter;
+}
+.restaurants__card i {
+  position: absolute;
+  font-size: 20px;
+  bottom: 23px;
+  right: 25px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #333333;
+  color: white;
+  padding: 10px 0px 20px 0px;
+}
+.footer img {
+  width: 150px;
+  padding: 20px;
+  filter: invert(100%);
+}
+.footer ul {
+  padding-left: 20px;
+  list-style-type: none;
+}
+.footer ul li {
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.footer ul li i {
+  display: inline-block;
+  padding-right: 10px;
+  font-size: 15px;
+  width: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

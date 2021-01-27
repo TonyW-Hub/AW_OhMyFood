@@ -1,0 +1,19 @@
+{
+  "name": "p3_ohmyfood_aw",
+  "version": "1.0.0",
+  "description": "P3_ohmyfood_AW",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss/style.scss:css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TonyW-Hub/_3_20012021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TonyW-Hub/_3_20012021/issues"
+  },
+  "homepage": "https://github.com/TonyW-Hub/_3_20012021#readme"
+}

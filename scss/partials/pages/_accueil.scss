@@ -90,6 +90,7 @@
         }
         &:hover {
             background: lighten($color-primary, 35%);
+            box-shadow: $shadow-pad-plus;
             i {
                 color: $color-primary;
             }

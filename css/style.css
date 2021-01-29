@@ -53,6 +53,10 @@
   font-size: 15px;
   width: 30px;
 }
+.footer ul li a {
+  text-decoration: none;
+  color: white;
+}
 
 .header {
   display: flex;
@@ -150,6 +154,7 @@
 }
 .function__pad:hover {
   background: #f2eafb;
+  box-shadow: 2px 2px 20px #b8b8b8;
 }
 .function__pad:hover i {
   color: #9356DC;
@@ -222,7 +227,7 @@
   border: none;
   font-size: 22px;
   background: white;
-  color: rgba(0, 0, 0, 0.616);
+  color: #3f3f3f;
   cursor: pointer;
   position: absolute;
   left: 25px;
@@ -236,7 +241,6 @@
 .bg__img img {
   object-fit: cover;
   max-width: 100%;
-  max-height: 300px;
 }
 
 .carte {

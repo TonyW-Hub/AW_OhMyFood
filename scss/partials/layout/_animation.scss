@@ -1,0 +1,228 @@
+// Anim Coeur
+.restaurants i {
+    &:hover {
+        animation: heart-fill 0.3s forwards;
+    }
+}
+
+#heart:checked ~ i {
+    animation: heart-fill 1s forwards;
+}
+
+@keyframes heart-fill {
+    100% {
+        transform-origin: top;
+        background: linear-gradient($color-primary, $color-secondary);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
+
+// Anim loader accueil
+$spin-dur: 2s;
+$spin-delay: 0.3s;
+$container-delay: $spin-dur + $spin-delay;
+
+.container {
+    animation: container 0.3s $container-delay backwards cubic-bezier(.68,.1,.48,.95);
+}
+
+@keyframes container {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.spin {
+    animation: spin $spin-dur $spin-delay both;
+}
+.spin2 {
+    animation: spin2 $spin-dur $spin-delay both;
+}
+// @keyframes spin {
+//     0% { 
+//         transform: rotate(0deg); 
+//         opacity: 1;
+//     }
+//     99% { 
+//         transform: rotate(360deg);
+//         opacity: 1; 
+//     }
+//     100% {
+//         opacity: 0;
+//         transform: rotate(360deg);
+//     }
+// }
+// @keyframes spin2 {
+//     0% { 
+//         transform: rotate(0deg) scale(0.5);
+//         opacity: 1;
+//     }
+//     99% { 
+//         transform: rotate(360deg) scale(1.3);
+//         opacity: 1; 
+//     }
+//     100% {
+//         opacity: 0;
+//         transform: rotate(360deg);
+//     }
+// }
+
+.loader {
+    animation: loader $spin-dur both;
+}
+.circle {
+    animation: circle $spin-dur ease-in-out;
+}
+@keyframes loader {
+    0% {
+        transform: rotate(0deg) scale(0.2);
+    }
+    99% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(360deg) scale(0.5);
+        opacity: 0;
+    }
+}
+
+@keyframes circle {
+    0% {
+        background-color: $color-primary;
+    }
+    50% {
+        background-color: $color-primary;
+    }
+    60% {
+        background-color: $color-tertiary;
+    }
+    99% {
+        opacity: 1;
+    }
+    100% {
+        background-color: $color-tertiary;
+        opacity: 0;
+    }
+}
+
+// Anim menu
+#mets-input1:checked ~ .check {
+    animation: outside 1.5s both;
+}
+#mets-input1:checked ~ .check i {
+    animation: icon 1.5s forwards;
+}
+
+#mets-input2:checked ~ .check {
+    animation: outside 1.5s both;
+}
+#mets-input2:checked ~ .check i {
+    animation: icon 1.5s forwards;
+}
+
+#mets-input3:checked ~ .check {
+    animation: outside 1.5s both;
+}
+#mets-input3:checked ~ .check i {
+    animation: icon 1.5s forwards;
+}
+
+#mets-input4:checked ~ .check {
+    animation: outside 1.5s both;
+}
+#mets-input4:checked ~ .check i {
+    animation: icon 1.5s forwards;
+}
+
+#mets-input5:checked ~ .check {
+    animation: outside 1.5s both;
+}
+#mets-input5:checked ~ .check i {
+    animation: icon 1.5s forwards;
+}
+
+#mets-input6:checked ~ .check {
+    animation: outside 1.5s both;
+}
+#mets-input6:checked ~ .check i {
+    animation: icon 1.5s forwards;
+}
+
+#mets-input7:checked ~ .check {
+    animation: outside 1.5s both;
+}
+#mets-input7:checked ~ .check i {
+    animation: icon 1.5s forwards;
+}
+
+#mets-input8:checked ~ .check {
+    animation: outside 1.5s both;
+}
+#mets-input8:checked ~ .check i {
+    animation: icon 1.5s forwards;
+}
+
+#mets-input9:checked ~ .check {
+    animation: outside 1.5s both;
+}
+#mets-input9:checked ~ .check i {
+    animation: icon 1.5s forwards;
+}
+
+#mets-input10:checked ~ .check {
+    animation: outside 1.5s both;
+}
+#mets-input10:checked ~ .check i {
+    animation: icon 1.5s forwards;
+}
+
+@keyframes outside {
+    0% {
+        transform: translateX(100%);
+        width: 0%;
+    }
+    100% {
+        transform: translateX(0%);
+        width: 25%;
+    }
+}
+
+@keyframes icon {
+    0% {
+        opacity: 0;
+        transform: rotateZ(0deg);
+    }
+    30% {
+        opacity: 1;
+        transform: rotateZ(360deg);
+    }
+}
+
+$num-pads: 10;
+$pads-dur: 1.5s;
+$pads-delay: $pads-dur / $num-pads;
+.pad-menu {
+    animation: shape $pads-dur backwards;
+    @for $i from 1 through $num-pads {
+        &--#{$i} {
+            animation-delay: $pads-delay * $i;
+        }
+    }
+}
+
+@keyframes shape {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}

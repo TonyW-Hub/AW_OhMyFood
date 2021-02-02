@@ -23,6 +23,226 @@
   cursor: pointer;
 }
 
+.restaurants i:hover {
+  animation: heart-fill 0.3s forwards;
+}
+
+#heart:checked ~ i {
+  animation: heart-fill 1s forwards;
+}
+
+@keyframes heart-fill {
+  100% {
+    transform-origin: top;
+    background: linear-gradient(#9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+.container {
+  animation: container 0.3s 2.3s backwards cubic-bezier(0.68, 0.1, 0.48, 0.95);
+}
+
+@keyframes container {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.spin {
+  animation: spin 2s 0.3s both;
+}
+
+.spin2 {
+  animation: spin2 2s 0.3s both;
+}
+
+.loader {
+  animation: loader 2s both;
+}
+
+.circle {
+  animation: circle 2s ease-in-out;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg) scale(0.2);
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg) scale(0.5);
+    opacity: 0;
+  }
+}
+@keyframes circle {
+  0% {
+    background-color: #9356DC;
+  }
+  50% {
+    background-color: #9356DC;
+  }
+  60% {
+    background-color: #99E2D0;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    background-color: #99E2D0;
+    opacity: 0;
+  }
+}
+#mets-input1:checked ~ .check {
+  animation: outside 1.5s both;
+}
+
+#mets-input1:checked ~ .check i {
+  animation: icon 1.5s forwards;
+}
+
+#mets-input2:checked ~ .check {
+  animation: outside 1.5s both;
+}
+
+#mets-input2:checked ~ .check i {
+  animation: icon 1.5s forwards;
+}
+
+#mets-input3:checked ~ .check {
+  animation: outside 1.5s both;
+}
+
+#mets-input3:checked ~ .check i {
+  animation: icon 1.5s forwards;
+}
+
+#mets-input4:checked ~ .check {
+  animation: outside 1.5s both;
+}
+
+#mets-input4:checked ~ .check i {
+  animation: icon 1.5s forwards;
+}
+
+#mets-input5:checked ~ .check {
+  animation: outside 1.5s both;
+}
+
+#mets-input5:checked ~ .check i {
+  animation: icon 1.5s forwards;
+}
+
+#mets-input6:checked ~ .check {
+  animation: outside 1.5s both;
+}
+
+#mets-input6:checked ~ .check i {
+  animation: icon 1.5s forwards;
+}
+
+#mets-input7:checked ~ .check {
+  animation: outside 1.5s both;
+}
+
+#mets-input7:checked ~ .check i {
+  animation: icon 1.5s forwards;
+}
+
+#mets-input8:checked ~ .check {
+  animation: outside 1.5s both;
+}
+
+#mets-input8:checked ~ .check i {
+  animation: icon 1.5s forwards;
+}
+
+#mets-input9:checked ~ .check {
+  animation: outside 1.5s both;
+}
+
+#mets-input9:checked ~ .check i {
+  animation: icon 1.5s forwards;
+}
+
+#mets-input10:checked ~ .check {
+  animation: outside 1.5s both;
+}
+
+#mets-input10:checked ~ .check i {
+  animation: icon 1.5s forwards;
+}
+
+@keyframes outside {
+  0% {
+    transform: translateX(100%);
+    width: 0%;
+  }
+  100% {
+    transform: translateX(0%);
+    width: 25%;
+  }
+}
+@keyframes icon {
+  0% {
+    opacity: 0;
+    transform: rotateZ(0deg);
+  }
+  30% {
+    opacity: 1;
+    transform: rotateZ(360deg);
+  }
+}
+.pad-menu {
+  animation: shape 1.5s backwards;
+}
+.pad-menu--1 {
+  animation-delay: 0.15s;
+}
+.pad-menu--2 {
+  animation-delay: 0.3s;
+}
+.pad-menu--3 {
+  animation-delay: 0.45s;
+}
+.pad-menu--4 {
+  animation-delay: 0.6s;
+}
+.pad-menu--5 {
+  animation-delay: 0.75s;
+}
+.pad-menu--6 {
+  animation-delay: 0.9s;
+}
+.pad-menu--7 {
+  animation-delay: 1.05s;
+}
+.pad-menu--8 {
+  animation-delay: 1.2s;
+}
+.pad-menu--9 {
+  animation-delay: 1.35s;
+}
+.pad-menu--10 {
+  animation-delay: 1.5s;
+}
+
+@keyframes shape {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
 .footer {
   display: flex;
   flex-direction: column;
@@ -56,6 +276,55 @@
 .footer ul li a {
   text-decoration: none;
   color: white;
+}
+
+.loader {
+  position: absolute;
+  left: 10%;
+  top: 28%;
+  width: 300px;
+  height: 300px;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+.circle1 {
+  position: absolute;
+  top: 10px;
+  right: 120px;
+}
+.circle2 {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+.circle3 {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+}
+.circle4 {
+  position: absolute;
+  bottom: 140px;
+  right: 3px;
+}
+.circle5 {
+  position: absolute;
+  bottom: 55px;
+  right: 24px;
+}
+.circle6 {
+  position: absolute;
+  bottom: 5px;
+  right: 92px;
+}
+.circle7 {
+  position: absolute;
+  bottom: 15px;
+  left: 70px;
 }
 
 .header {
@@ -259,48 +528,93 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 40px 10px 20px;
+  padding: 30px 20px 10px 20px;
   font-size: 1.1rem;
 }
 .carte .titre i {
   font-size: 1.4rem;
+  padding-left: 10px;
+  padding-right: 20px;
 }
-.carte .menu {
+.carte .carte-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 20px;
+}
+.carte .carte-container .menu {
   padding-top: 15px;
 }
-.carte .menu h2 {
+.carte .carte-container .menu h2 {
   position: relative;
   font-weight: 300;
   font-size: 1.1rem;
-  padding: 10px 20px;
+  padding: 10px 0px;
 }
-.carte .menu .barre__verte {
+.carte .carte-container .menu .barre__verte {
   position: absolute;
   border-bottom: 2px solid #99E2D0;
   width: 40px;
   bottom: 5px;
-  left: 20px;
+  left: 0px;
 }
-.carte .mets {
+.carte .pad-menu {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background: white;
   box-shadow: 1px 1px 5px #b8b8b8;
   border-radius: 10px;
-  margin: 15px 5%;
-  padding: 10px;
+  margin: 15px 0px;
+  overflow: hidden;
+  cursor: pointer;
 }
-.carte .mets h3 {
+.carte .pad-menu .mets {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+  min-width: 0;
+  position: relative;
+}
+.carte .pad-menu .mets h3 {
   padding-bottom: 5px;
   font-weight: 500;
 }
-.carte .mets p {
-  display: flex;
-  justify-content: space-between;
+.carte .pad-menu .mets p {
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   font-weight: 300;
 }
-.carte .mets span {
+.carte .pad-menu .mets span {
+  position: absolute;
+  bottom: 0;
+  right: -7px;
   font-weight: 400;
+  padding: 10px;
+}
+.carte .pad-menu .check {
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(100%);
+  transition: all 0.5s ease;
+}
+.carte .pad-menu .check .outside {
+  background-color: #99E2D0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.carte .pad-menu .check .outside i {
+  color: white;
+  overflow: hidden;
 }
 .carte .btn--gradient {
   margin-top: 40px;

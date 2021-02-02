@@ -33,49 +33,95 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 30px 40px 10px 20px;
+        padding: 30px 20px 10px 20px;
         font-size: 1.1rem;
         i {
             font-size: 1.4rem;
+            padding-left: 10px;
+            padding-right: 20px;
         }
     }
-    .menu {
-        padding-top: 15px;
-        h2 {
-            position: relative;
-            font-weight: 300;
-            font-size: 1.1rem;
-            padding: 10px 20px;
-        }
-        .barre__verte {
-            position: absolute;
-            border-bottom: 2px solid $color-tertiary;
-            width: 40px;
-            bottom: 5px;
-            left: 20px;
-        }
-    }
-    .mets {
+    .carte-container {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        padding: 10px 20px;
+        .menu {
+            padding-top: 15px;
+            h2 {
+                position: relative;
+                font-weight: 300;
+                font-size: 1.1rem;
+                padding: 10px 0px;
+            }
+            .barre__verte {
+                position: absolute;
+                border-bottom: 2px solid $color-tertiary;
+                width: 40px;
+                bottom: 5px;
+                left: 0px;
+            }
+        }
+    }
+    .pad-menu {
+        display: flex;
+        flex-direction: row;
         background: $color-white;
         box-shadow: $shadow-mets;
         border-radius: 10px;
-        margin: 15px 5%;
-        padding: 10px;
-        h3 {
-            padding-bottom: 5px;
-            font-weight: 500;
-        }
-        p {
+        margin: 15px 0px;
+        overflow: hidden;
+        cursor: pointer;
+        .mets {
             display: flex;
-            justify-content: space-between;
-            font-weight: 300;
+            flex-direction: column;
+            padding: 10px;
+            width: 100%;
+            min-width: 0;
+            position: relative;
+            h3 {
+                padding-bottom: 5px;
+                font-weight: 500;
+            }
+            p {
+                width: 90%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                font-weight: 300;
+            }
+            span {
+                position: absolute;
+                bottom: 0;
+                right: -7px;
+                font-weight: 400;
+                padding: 10px;
+            }
         }
-        span {
-            font-weight: 400;
+        .check {
+            background-color: $color-tertiary;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateX(100%);
+            transition: all 0.5s ease;
+            .outside {
+                background-color: $color-tertiary;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                i {
+                    color: $color-white;
+                    overflow: hidden;
+                }
+            }
         }
     }
+
     .btn--gradient {
         margin-top: 40px;
         width: 60%;

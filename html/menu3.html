@@ -24,68 +24,146 @@
     <section class="carte">
         <div class="titre">
             <h1>À la française</h1>
-            <i class="far fa-heart"></i>
+            <label for="heart">
+                <input type="checkbox" name="heart" id="heart" hidden>
+                <i class="far fa-heart"></i>
+            </label>
         </div>
-        <div class="entrees">
-            <div class="menu">
-                <h2>ENTRÉES<span class="barre__verte"></span></h2>
-            </div>
-            <div class="mets">
-                <h3>Tartare de poulpe acidulé</h3>
-                <p>Aux zestes d'orange<span>25€</span></p>
-                
-            </div>
-            <div class="mets">
-                <h3>Velouté de légumes d'antan</h3>
-                <p>Carotte, panais, topinambour<span>35€</span></p>
-                
-            </div>
-            <div class="mets">
-                <h3>Soupe à l'oignon</h3>
-                <p>Revisitée<span>20€</span></p>
-                
-            </div>
-        </div>
-        <div class="plats">
-            <div class="menu">
-                <h2>PLATS<span class="barre__verte"></span></h2>
-            </div>
-            <div class="mets">
-                <h3>Coquilles Saint-Jacques</h3>
-                <p>Accompagnées d'une purée de panais<span>40€</span></p>
-                
-            </div>
-            <div class="mets">
-                <h3>Magret de canard</h3>
-                <p>Et parmentier de pommes de terre<span>35€</span></p>
-                
-            </div>
-            <div class="mets">
-                <h3>Pigeonneau d’Ille-et-Vilaine</h3>
-                <p>Sur son lit de gnocchis aux légumes<span>44€</span></p>
-                
-            </div>
-            <div class="desserts">
+        <div class="carte-container">
+            <div class="entrees">
                 <div class="menu">
-                    <h2>DESSERTS<span class="barre__verte"></span></h2>
+                    <h2>ENTRÉES<span class="barre__verte"></span></h2>
                 </div>
-                <div class="mets">
-                    <h3>Pétales de violettes glacés</h3>
-                    <p>Et purée de noisettes<span>18€</span></p>
-                    
+                <label for="mets-input1">
+                    <div class="pad-menu pad-menu--1">
+                        <div class="mets">
+                            <h3>Tartare de poulpe acidulé</h3>
+                            <p>Aux zestes d'orange</p>
+                            <span>25€</span>
+                        </div>
+                        <input type="checkbox" name="mets-input1" id="mets-input1" hidden>
+                        <div class="check">
+                            <div class="outside"><i class="fas fa-check-circle"></i></div>
+                        </div>
+                    </div>
+                </label>
+                <label for="mets-input2">
+                    <div class="pad-menu pad-menu--2">
+                        <div class="mets">
+                            <h3>Velouté de légumes d'antan</h3>
+                            <p>Carotte, panais, topinambour</p>
+                            <span>35€</span>
+                        </div>
+                        <input type="checkbox" name="mets-input2" id="mets-input2" hidden>
+                        <div class="check">
+                            <div class="outside"><i class="fas fa-check-circle"></i></div>
+                        </div>
+                    </div>
+                </label>
+                <label for="mets-input3">
+                    <div class="pad-menu pad-menu--3">
+                        <div class="mets">
+                            <h3>Soupe à l'oignon</h3>
+                            <p>Revisitée</p>
+                            <span>20€</span>
+                        </div>
+                        <input type="checkbox" name="mets-input3" id="mets-input3" hidden>
+                        <div class="check">
+                            <div class="outside"><i class="fas fa-check-circle"></i></div>
+                        </div>
+                    </div>
+                </label>
+            </div>
+            <div class="plats">
+                <div class="menu">
+                    <h2>PLATS<span class="barre__verte"></span></h2>
                 </div>
-                <div class="mets">
-                    <h3>Fondant au chocolat</h3>
-                    <p>Revisité<span>22€</span></p>
-                    
-                </div>
-                <div class="mets">
-                    <h3>Millefeuille croustillant</h3>
-                    <p>Myrtilles et pâte d’amande<span>23€</span></p>  
+                <label for="mets-input4">
+                    <div class="pad-menu pad-menu--4">
+                        <div class="mets">
+                            <h3>Coquilles Saint-Jacques</h3>
+                            <p>Accompagnées d'une purée de panais</p>
+                            <span>40€</span>
+                        </div>
+                        <input type="checkbox" name="mets-input4" id="mets-input4" hidden>
+                        <div class="check">
+                            <div class="outside"><i class="fas fa-check-circle"></i></div>
+                        </div>
+                    </div>
+                </label>
+                <label for="mets-input5">
+                    <div class="pad-menu pad-menu--5">
+                        <div class="mets">
+                            <h3>Magret de canard</h3>
+                            <p>Et parmentier de pommes de terre</p>
+                            <span>35€</span>
+                        </div>
+                        <input type="checkbox" name="mets-input5" id="mets-input5" hidden>
+                        <div class="check">
+                            <div class="outside"><i class="fas fa-check-circle"></i></div>
+                        </div>
+                    </div>
+                </label>
+                <label for="mets-input6">
+                    <div class="pad-menu pad-menu--6">
+                        <div class="mets">
+                            <h3>Pigeonneau d’Ille-et-Vilaine</h3>
+                            <p>Sur son lit de gnocchis aux légumes</p>
+                            <span>44€</span>
+                        </div>
+                        <input type="checkbox" name="mets-input6" id="mets-input6" hidden>
+                        <div class="check">
+                            <div class="outside"><i class="fas fa-check-circle"></i></div>
+                        </div>
+                    </div>
+                </label>
+                <div class="desserts">
+                    <div class="menu">
+                        <h2>DESSERTS<span class="barre__verte"></span></h2>
+                    </div>
+                    <label for="mets-input7">
+                        <div class="pad-menu pad-menu--7">
+                            <div class="mets">
+                                <h3>Pétales de violettes glacés</h3>
+                                <p>Et purée de noisettes</p>
+                                <span>18€</span>
+                            </div>
+                            <input type="checkbox" name="mets-input7" id="mets-input7" hidden>
+                            <div class="check">
+                                <div class="outside"><i class="fas fa-check-circle"></i></div>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="mets-input8">
+                        <div class="pad-menu pad-menu--8">
+                            <div class="mets">
+                                <h3>Fondant au chocolat</h3>
+                                <p>Revisité</p>
+                                <span>22€</span>
+                            </div>
+                            <input type="checkbox" name="mets-input8" id="mets-input8" hidden>
+                            <div class="check">
+                                <div class="outside"><i class="fas fa-check-circle"></i></div>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="mets-input9">
+                        <div class="pad-menu pad-menu--9">
+                            <div class="mets">
+                                <h3>Millefeuille croustillant</h3>
+                                <p>Myrtilles et pâte d’amande</p>
+                                <span>23€</span>
+                            </div>
+                            <input type="checkbox" name="mets-input9" id="mets-input9" hidden>
+                            <div class="check">
+                                <div class="outside"><i class="fas fa-check-circle"></i></div>
+                            </div>
+                        </div>
+                    </label>
                 </div>
             </div>
+            <button class="btn--gradient">Commander</button>
         </div>
-        <button class="btn--gradient">Commander</button>
     </section>
 
     <footer class="footer">

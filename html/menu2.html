@@ -24,73 +24,159 @@
     <section class="carte">
         <div class="titre">
             <h1>La note enchantée</h1>
-            <i class="far fa-heart"></i>
+            <label for="heart">
+                <input type="checkbox" name="heart" id="heart" hidden>
+                <i class="far fa-heart"></i>
+            </label>
         </div>
-        <div class="entrees">
-            <div class="menu">
-                <h2>ENTRÉES<span class="barre__verte"></span></h2>
-            </div>
-            <div class="mets">
-                <h3>Ravioles de foie gras</h3>
-                <p>Accompagnés de leur crème à la truffe<span>25€</span></p>
-                
-            </div>
-            <div class="mets">
-                <h3>Caviar osciètre</h3>
-                <p>Sur blini à la farine de blé noir<span>35€</span></p>
-                
-            </div>
-            <div class="mets">
-                <h3>Homard et espuma de potiron</h3>
-                <p>Mariné aux zestes d'orange<span>20€</span></p>
-                
-            </div>
-            <div class="mets">
-                <h3>Foie gras de canard cuit entier</h3>
-                <p>Confiture de figue et pain toasté<span>35€</span></p>
-                
-            </div>
-        </div>
-        <div class="plats">
-            <div class="menu">
-                <h2>PLATS<span class="barre__verte"></span></h2>
-            </div>
-            <div class="mets">
-                <h3>Noix de coquilles Saint-Jacques</h3>
-                <p>Sur lit de purée de céleri-rave<span>40€</span></p>
-                
-            </div>
-            <div class="mets">
-                <h3>Langoustine poêlée</h3>
-                <p>Purée de patate douce<span>35€</span></p>
-                
-            </div>
-            <div class="mets">
-                <h3>Mijoté de queue de boeuf </h3>
-                <p>Et riz sauvage aux zestes de citron<span>44€</span></p>
-                
-            </div>
-            <div class="desserts">
+        <div class="carte-container">
+            <div class="entrees">
                 <div class="menu">
-                    <h2>DESSERTS<span class="barre__verte"></span></h2>
+                    <h2>ENTRÉES<span class="barre__verte"></span></h2>
                 </div>
-                <div class="mets">
-                    <h3>Macaron noisette et chocolat</h3>
-                    <p>Glace au caramel brun et sel de Guérande<span>18€</span></p>
-                    
+                <label for="mets-input1">
+                    <div class="pad-menu pad-menu--1">
+                        <div class="mets">
+                            <h3>Ravioles de foie gras</h3>
+                            <p>Accompagnés de leur crème à la truffe</p>
+                            <span>25€</span>
+                        </div>
+                        <input type="checkbox" name="mets-input1" id="mets-input1" hidden>
+                        <div class="check">
+                            <div class="outside"><i class="fas fa-check-circle"></i></div>
+                        </div>
+                    </div>
+                </label>
+                <label for="mets-input2">
+                    <div class="pad-menu pad-menu--2">
+                        <div class="mets">
+                            <h3>Caviar osciètre</h3>
+                            <p>Sur blini à la farine de blé noir</p>
+                            <span>35€</span>
+                        </div>
+                        <input type="checkbox" name="mets-input2" id="mets-input2" hidden>
+                        <div class="check">
+                            <div class="outside"><i class="fas fa-check-circle"></i></div>
+                        </div>
+                    </div>
+                </label>
+                <label for="mets-input3">
+                    <div class="pad-menu pad-menu--3">
+                        <div class="mets">
+                            <h3>Homard et espuma de potiron</h3>
+                            <p>Mariné aux zestes d'orange</p>
+                            <span>20€</span>
+                        </div>
+                        <input type="checkbox" name="mets-input3" id="mets-input3" hidden>
+                        <div class="check">
+                            <div class="outside"><i class="fas fa-check-circle"></i></div>
+                        </div>
+                    </div>
+                </label>
+                <label for="mets-input10">
+                    <div class="pad-menu pad-menu--4">
+                        <div class="mets">
+                            <h3>Foie gras de canard cuit entier</h3>
+                            <p>Confiture de figue et pain toasté</p>
+                            <span>35€</span>
+                        </div>
+                        <input type="checkbox" name="mets-input10" id="mets-input10" hidden>
+                        <div class="check">
+                            <div class="outside"><i class="fas fa-check-circle"></i></div>
+                        </div>
+                    </div>
+                </label>
+            </div>
+            <div class="plats">
+                <div class="menu">
+                    <h2>PLATS<span class="barre__verte"></span></h2>
                 </div>
-                <div class="mets">
-                    <h3>Baba au rhum revisité</h3>
-                    <p>Avec son coulis de citron<span>22€</span></p>
-                    
-                </div>
-                <div class="mets">
-                    <h3>Tarte au citron meringuée</h3>
-                    <p>Déstructurée<span>23€</span></p>      
+                <label for="mets-input4">
+                    <div class="pad-menu pad-menu--5">
+                        <div class="mets">
+                            <h3>Noix de coquilles Saint-Jacques</h3>
+                            <p>Sur lit de purée de céleri-rave</p>
+                            <span>40€</span>
+                        </div>
+                        <input type="checkbox" name="mets-input4" id="mets-input4" hidden>
+                        <div class="check">
+                            <div class="outside"><i class="fas fa-check-circle"></i></div>
+                        </div>
+                    </div>
+                </label>
+                <label for="mets-input5">
+                    <div class="pad-menu pad-menu--6">
+                        <div class="mets">
+                            <h3>Langoustine poêlée</h3>
+                            <p>Purée de patate douce</p>
+                            <span>35€</span>
+                        </div>
+                        <input type="checkbox" name="mets-input5" id="mets-input5" hidden>
+                        <div class="check">
+                            <div class="outside"><i class="fas fa-check-circle"></i></div>
+                        </div>
+                    </div>
+                </label>
+                <label for="mets-input6">
+                    <div class="pad-menu pad-menu--7">
+                        <div class="mets">
+                            <h3>Mijoté de queue de boeuf</h3>
+                            <p>Et riz sauvage aux zestes de citron</p>
+                            <span>44€</span>
+                        </div>
+                        <input type="checkbox" name="mets-input6" id="mets-input6" hidden>
+                        <div class="check">
+                            <div class="outside"><i class="fas fa-check-circle"></i></div>
+                        </div>
+                    </div>
+                </label>
+                <div class="desserts">
+                    <div class="menu">
+                        <h2>DESSERTS<span class="barre__verte"></span></h2>
+                    </div>
+                    <label for="mets-input7">
+                        <div class="pad-menu pad-menu--8">
+                            <div class="mets">
+                                <h3>Macaron noisette et chocolat</h3>
+                                <p>Glace au caramel brun et sel de Guérande</p>
+                                <span>18€</span>
+                            </div>
+                            <input type="checkbox" name="mets-input7" id="mets-input7" hidden>
+                            <div class="check">
+                                <div class="outside"><i class="fas fa-check-circle"></i></div>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="mets-input8">
+                        <div class="pad-menu pad-menu--9">
+                            <div class="mets">
+                                <h3>Baba au rhum revisité</h3>
+                                <p>Avec son coulis de citron</p>
+                                <span>22€</span>
+                            </div>
+                            <input type="checkbox" name="mets-input8" id="mets-input8" hidden>
+                            <div class="check">
+                                <div class="outside"><i class="fas fa-check-circle"></i></div>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="mets-input9">
+                        <div class="pad-menu pad-menu--10">
+                            <div class="mets">
+                                <h3>Tarte au citron meringuée</h3>
+                                <p>Déstructurée</p>
+                                <span>23€</span>
+                            </div>
+                            <input type="checkbox" name="mets-input9" id="mets-input9" hidden>
+                            <div class="check">
+                                <div class="outside"><i class="fas fa-check-circle"></i></div>
+                            </div>
+                        </div>
+                    </label>
                 </div>
             </div>
+            <button class="btn--gradient">Commander</button>
         </div>
-        <button class="btn--gradient">Commander</button>
     </section>
 
     <footer class="footer">

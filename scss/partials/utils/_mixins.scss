@@ -1,5 +1,32 @@
 @mixin title {
     padding-bottom: 20px;
     align-self: flex-start;
-    padding-left: 10px;
+    padding-left: 20px;
+}
+
+@mixin resolution($size) {
+    @if $size == phone-res {
+        @media (min-width: $phone_patch) and (max-width: $landscape_phone)  { @content }
+    }
+    @else if $size == phone-patch {
+        @media (min-width: $phone_min_res) and (max-width: $phone_patch) { @content }
+    }
+    @else if $size == tablet-res {
+        @media (min-width: $tablet_min_res) and (max-width: $tablet_max_res) { @content }
+    }
+    @else if $size == tablet-patch {
+        @media (min-width: $tablet_max_res) and (max-width: $tablet_patch) { @content }
+    }
+    @else if $size == landscape-tablet-res {
+        @media (min-width: $tablet_patch) and (max-width: $landscape_tablet) { @content }
+    }
+    @else if $size == desktop-res-patch {
+        @media (min-width: $landscape_tablet) and (max-width: $desktop_patch) { @content }
+    }
+    @else if $size == desktop-res-patch2 {
+        @media (min-width: $desktop_patch) and (max-width: $desktop_patch2) { @content }
+    } 
+    @else if $size == desktop-res {
+        @media (min-width: $desktop_min_res) and (max-width: $desktop_max_res) { @content }
+    }
 }

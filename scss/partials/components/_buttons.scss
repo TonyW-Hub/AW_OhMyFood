@@ -6,5 +6,26 @@
     color: $color-white;
     background: linear-gradient($color-secondary, $color-primary);
     box-shadow: $box-shadow;
+    z-index: 1;
+    position: relative;
     cursor: pointer;
+    &:hover {
+        &::after {
+            opacity: 1;
+        }
+        box-shadow: $shadow-pad-plus;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 2rem;
+        background: linear-gradient(lighten($color-secondary, 7%), lighten($color-primary, 7%));
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 0.25s;
+    }
 }

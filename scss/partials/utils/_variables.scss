@@ -14,3 +14,17 @@ $box-shadow: 1px 1px 3px grey;
 $shadow-pad: 1px 1px 10px rgb(184, 184, 184);
 $shadow-pad-plus: 2px 2px 20px rgb(184, 184, 184);
 $shadow-mets: 1px 1px 5px rgb(184, 184, 184);
+
+$phone_min_res: 400px;
+$phone_patch: 500px;
+$landscape_phone: 680px;
+
+$tablet_min_res: 681px;
+$tablet_max_res: 900px;
+$tablet_patch: 960px;
+$landscape_tablet: 1030px;
+
+$desktop_patch: 1220px;
+$desktop_patch2: 1850px; 
+$desktop_min_res: 1100px;
+$desktop_max_res: 1920px;

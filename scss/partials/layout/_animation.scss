@@ -113,73 +113,73 @@ $container-delay: $spin-dur + $spin-delay;
 
 // Anim menu
 #mets-input1:checked ~ .check {
-    animation: outside 1.5s both;
+    animation: outside 1s both;
 }
 #mets-input1:checked ~ .check i {
-    animation: icon 1.5s forwards;
+    animation: icon 1s both;
 }
 
 #mets-input2:checked ~ .check {
-    animation: outside 1.5s both;
+    animation: outside 1s both;
 }
 #mets-input2:checked ~ .check i {
-    animation: icon 1.5s forwards;
+    animation: icon 1s both;
 }
 
 #mets-input3:checked ~ .check {
-    animation: outside 1.5s both;
+    animation: outside 1s both;
 }
 #mets-input3:checked ~ .check i {
-    animation: icon 1.5s forwards;
+    animation: icon 1s both;
 }
 
 #mets-input4:checked ~ .check {
-    animation: outside 1.5s both;
+    animation: outside 1s both;
 }
 #mets-input4:checked ~ .check i {
-    animation: icon 1.5s forwards;
+    animation: icon 1s both;
 }
 
 #mets-input5:checked ~ .check {
-    animation: outside 1.5s both;
+    animation: outside 1s both;
 }
 #mets-input5:checked ~ .check i {
-    animation: icon 1.5s forwards;
+    animation: icon 1s both;
 }
 
 #mets-input6:checked ~ .check {
-    animation: outside 1.5s both;
+    animation: outside 1s both;
 }
 #mets-input6:checked ~ .check i {
-    animation: icon 1.5s forwards;
+    animation: icon 1s both;
 }
 
 #mets-input7:checked ~ .check {
-    animation: outside 1.5s both;
+    animation: outside 1s both;
 }
 #mets-input7:checked ~ .check i {
-    animation: icon 1.5s forwards;
+    animation: icon 1s both;
 }
 
 #mets-input8:checked ~ .check {
-    animation: outside 1.5s both;
+    animation: outside 1s both;
 }
 #mets-input8:checked ~ .check i {
-    animation: icon 1.5s forwards;
+    animation: icon 1s both;
 }
 
 #mets-input9:checked ~ .check {
-    animation: outside 1.5s both;
+    animation: outside 1s both;
 }
 #mets-input9:checked ~ .check i {
-    animation: icon 1.5s forwards;
+    animation: icon 1s both;
 }
 
 #mets-input10:checked ~ .check {
-    animation: outside 1.5s both;
+    animation: outside 1s both;
 }
 #mets-input10:checked ~ .check i {
-    animation: icon 1.5s forwards;
+    animation: icon 1s both;
 }
 
 @keyframes outside {
@@ -191,15 +191,21 @@ $container-delay: $spin-dur + $spin-delay;
         transform: translateX(0%);
         width: 25%;
     }
+    // 50%,80% {
+    //     transform: translateX(0%);
+    //     width: 25%;
+    // }
+    // 100% {
+    //     transform: translateX(100%);
+    //     width: 1%;
+    // }
 }
 
 @keyframes icon {
     0% {
-        opacity: 0;
         transform: rotateZ(0deg);
     }
-    30% {
-        opacity: 1;
+    100% {
         transform: rotateZ(360deg);
     }
 }

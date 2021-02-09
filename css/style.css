@@ -121,83 +121,83 @@
   }
 }
 #mets-input1:checked ~ .check {
-  animation: outside 1.5s both;
+  animation: outside 1s both;
 }
 
 #mets-input1:checked ~ .check i {
-  animation: icon 1.5s forwards;
+  animation: icon 1s both;
 }
 
 #mets-input2:checked ~ .check {
-  animation: outside 1.5s both;
+  animation: outside 1s both;
 }
 
 #mets-input2:checked ~ .check i {
-  animation: icon 1.5s forwards;
+  animation: icon 1s both;
 }
 
 #mets-input3:checked ~ .check {
-  animation: outside 1.5s both;
+  animation: outside 1s both;
 }
 
 #mets-input3:checked ~ .check i {
-  animation: icon 1.5s forwards;
+  animation: icon 1s both;
 }
 
 #mets-input4:checked ~ .check {
-  animation: outside 1.5s both;
+  animation: outside 1s both;
 }
 
 #mets-input4:checked ~ .check i {
-  animation: icon 1.5s forwards;
+  animation: icon 1s both;
 }
 
 #mets-input5:checked ~ .check {
-  animation: outside 1.5s both;
+  animation: outside 1s both;
 }
 
 #mets-input5:checked ~ .check i {
-  animation: icon 1.5s forwards;
+  animation: icon 1s both;
 }
 
 #mets-input6:checked ~ .check {
-  animation: outside 1.5s both;
+  animation: outside 1s both;
 }
 
 #mets-input6:checked ~ .check i {
-  animation: icon 1.5s forwards;
+  animation: icon 1s both;
 }
 
 #mets-input7:checked ~ .check {
-  animation: outside 1.5s both;
+  animation: outside 1s both;
 }
 
 #mets-input7:checked ~ .check i {
-  animation: icon 1.5s forwards;
+  animation: icon 1s both;
 }
 
 #mets-input8:checked ~ .check {
-  animation: outside 1.5s both;
+  animation: outside 1s both;
 }
 
 #mets-input8:checked ~ .check i {
-  animation: icon 1.5s forwards;
+  animation: icon 1s both;
 }
 
 #mets-input9:checked ~ .check {
-  animation: outside 1.5s both;
+  animation: outside 1s both;
 }
 
 #mets-input9:checked ~ .check i {
-  animation: icon 1.5s forwards;
+  animation: icon 1s both;
 }
 
 #mets-input10:checked ~ .check {
-  animation: outside 1.5s both;
+  animation: outside 1s both;
 }
 
 #mets-input10:checked ~ .check i {
-  animation: icon 1.5s forwards;
+  animation: icon 1s both;
 }
 
 @keyframes outside {
@@ -212,11 +212,9 @@
 }
 @keyframes icon {
   0% {
-    opacity: 0;
     transform: rotateZ(0deg);
   }
-  30% {
-    opacity: 1;
+  100% {
     transform: rotateZ(360deg);
   }
 }
@@ -511,7 +509,11 @@
   right: 25px;
 }
 
-.back {
+.header {
+  z-index: 2;
+  background-color: white;
+}
+.header .back {
   border: none;
   font-size: 22px;
   background: white;
@@ -519,7 +521,7 @@
   cursor: pointer;
   position: absolute;
   left: 25px;
-  bottom: 20px;
+  bottom: 22px;
 }
 
 .bg__img {
@@ -598,6 +600,10 @@
 .carte .pad-menu .mets h3 {
   padding-bottom: 5px;
   font-weight: 500;
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .carte .pad-menu .mets p {
   width: 90%;
@@ -609,7 +615,7 @@
 .carte .pad-menu .mets span {
   position: absolute;
   bottom: 0;
-  right: -7px;
+  right: 0px;
   font-weight: 400;
   padding: 10px;
 }
@@ -618,6 +624,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 0%;
   transform: translateX(100%);
   transition: all 0.5s ease;
 }
@@ -634,6 +641,8 @@
 .carte .pad-menu .check .outside i {
   color: white;
   overflow: hidden;
+  padding: 5px;
+  transform: rotateZ(0deg);
 }
 .carte .btn--gradient {
   margin-top: 40px;
@@ -796,6 +805,11 @@
   }
 }
 @media (min-width: 900px) and (max-width: 960px) {
+  .loader {
+    left: 35%;
+    top: 30%;
+  }
+
   .header img {
     width: 220px;
   }
@@ -1279,6 +1293,213 @@
   .footer ul li i {
     font-size: 20px;
     padding-right: 20px;
+  }
+}
+@media (min-width: 1030px) and (max-width: 1920px) {
+  .bg__img {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -160px;
+  }
+
+  .carte {
+    margin-top: 350px;
+  }
+  .carte .titre {
+    justify-content: center;
+    font-size: 1.4rem;
+    padding-bottom: 20px;
+  }
+  .carte .titre h1 {
+    padding-right: 15px;
+  }
+  .carte .titre i {
+    font-size: 1.5rem;
+  }
+  .carte .carte-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .carte .carte-container .entrees, .carte .carte-container .plats, .carte .carte-container .desserts {
+    width: 30%;
+  }
+  .carte .carte-container .menu {
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+  }
+  .carte .carte-container .btn--gradient {
+    width: 20%;
+    font-size: 1.4rem;
+    margin-top: 80px;
+  }
+  .carte .pad-menu .mets {
+    padding: 20px;
+  }
+  .carte .pad-menu .mets:hover ~ .check {
+    transform: translateX(10%);
+    background: #99E2D0;
+    width: 30%;
+  }
+  .carte .pad-menu .mets:hover ~ .check i {
+    transform: rotateZ(360deg);
+  }
+  .carte .pad-menu .mets h3 {
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  .carte .pad-menu .mets p {
+    font-size: 1.1rem;
+  }
+  .carte .pad-menu .mets span {
+    font-size: 1.1rem;
+    bottom: 9px;
+  }
+  .carte .pad-menu .check {
+    transition: all 1s ease-in-out;
+  }
+  .carte .pad-menu .check i {
+    transition: all 1s ease-in-out;
+  }
+
+  .footer {
+    position: relative;
+    z-index: 2;
+  }
+  .footer img {
+    width: 220px;
+  }
+  .footer ul {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+}
+@media (min-width: 681px) and (max-width: 1030px) {
+  .carte {
+    margin-top: 280px;
+  }
+  .carte .titre {
+    justify-content: center;
+    font-size: 1.3rem;
+  }
+  .carte .titre h1 {
+    padding-right: 40px;
+  }
+  .carte .titre i {
+    font-size: 1.4rem;
+  }
+  .carte .carte-container {
+    align-items: center;
+  }
+  .carte .entrees, .carte .plats, .carte .desserts {
+    width: 75%;
+  }
+  .carte .btn--gradient {
+    width: 40%;
+    font-size: 1.3rem;
+    margin-top: 50px;
+  }
+}
+@media (min-width: 1921px) and (max-width: 3840px) {
+  .header .back {
+    font-size: 35px;
+    left: 50px;
+    bottom: 22px;
+  }
+  .header img {
+    width: 315px;
+  }
+
+  .carte {
+    margin-top: 700px;
+    padding-bottom: 170px;
+    padding-top: 30px;
+  }
+  .carte .titre {
+    justify-content: center;
+    font-size: 1.7rem;
+    padding-bottom: 80px;
+  }
+  .carte .titre h1 {
+    padding-right: 15px;
+  }
+  .carte .titre i {
+    font-size: 1.8rem;
+  }
+  .carte .carte-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .carte .carte-container .entrees, .carte .carte-container .plats, .carte .carte-container .desserts {
+    width: 30%;
+  }
+  .carte .carte-container .menu {
+    padding-top: 50px;
+    padding-bottom: 35px;
+    display: flex;
+    justify-content: center;
+  }
+  .carte .carte-container .menu h2 {
+    font-size: 1.5rem;
+  }
+  .carte .carte-container .menu .barre__verte {
+    width: 45px;
+  }
+  .carte .carte-container .btn--gradient {
+    width: 20%;
+    font-size: 1.7rem;
+    margin-top: 170px;
+  }
+  .carte .pad-menu {
+    margin: 20px 0px;
+  }
+  .carte .pad-menu .mets {
+    padding: 30px;
+  }
+  .carte .pad-menu .mets h3 {
+    padding-bottom: 15px;
+    font-size: 1.4rem;
+  }
+  .carte .pad-menu .mets p {
+    font-size: 1.2rem;
+  }
+  .carte .pad-menu .mets span {
+    font-size: 1.2rem;
+    bottom: 18px;
+  }
+
+  .footer {
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 230px;
+    position: relative;
+    z-index: 2;
+  }
+  .footer img {
+    width: 270px;
+  }
+  .footer ul {
+    font-size: 1.2rem;
+    padding-left: 0;
+    padding-top: 160px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+  .footer ul li {
+    padding-bottom: 10px;
+    font-size: 1.4rem;
+  }
+  .footer ul li i {
+    font-size: 1.4rem;
+    padding-right: 30px;
+    width: 40px;
   }
 }
 

@@ -29,4 +29,13 @@
     @else if $size == desktop-res {
         @media (min-width: $desktop_min_res) and (max-width: $desktop_max_res) { @content }
     }
+    @else if $size == desktop-res-menu {
+        @media (min-width: $landscape_tablet) and (max-width: $desktop_max_res) { @content }
+    }
+    @else if $size == tablet-res-menu {
+        @media (min-width: $tablet_min_res) and (max-width: $landscape_tablet) { @content }
+    }
+    @else if $size == ultraHD-res { 
+        @media (min-width: $ultra-hd-res_min) and (max-width: $ultra-hd-res_max) { @content }
+    }
 }

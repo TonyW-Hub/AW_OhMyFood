@@ -14,7 +14,8 @@
         transform-origin: top;
         background: linear-gradient($color-primary, $color-secondary);
         background-clip: text;
-        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        color: transparent;
         font-weight: bold;
         cursor: pointer;
     }
@@ -37,41 +38,6 @@ $container-delay: $spin-dur + $spin-delay;
         opacity: 1;
     }
 }
-
-.spin {
-    animation: spin $spin-dur $spin-delay both;
-}
-.spin2 {
-    animation: spin2 $spin-dur $spin-delay both;
-}
-// @keyframes spin {
-//     0% { 
-//         transform: rotate(0deg); 
-//         opacity: 1;
-//     }
-//     99% { 
-//         transform: rotate(360deg);
-//         opacity: 1; 
-//     }
-//     100% {
-//         opacity: 0;
-//         transform: rotate(360deg);
-//     }
-// }
-// @keyframes spin2 {
-//     0% { 
-//         transform: rotate(0deg) scale(0.5);
-//         opacity: 1;
-//     }
-//     99% { 
-//         transform: rotate(360deg) scale(1.3);
-//         opacity: 1; 
-//     }
-//     100% {
-//         opacity: 0;
-//         transform: rotate(360deg);
-//     }
-// }
 
 .loader {
     animation: loader $spin-dur both;
@@ -112,74 +78,11 @@ $container-delay: $spin-dur + $spin-delay;
 }
 
 // Anim menu
-#mets-input1:checked ~ .check {
-    animation: outside 1s both;
+.mets:active ~ .check {
+    animation: outside 2.2s both;
 }
-#mets-input1:checked ~ .check i {
-    animation: icon 1s both;
-}
-
-#mets-input2:checked ~ .check {
-    animation: outside 1s both;
-}
-#mets-input2:checked ~ .check i {
-    animation: icon 1s both;
-}
-
-#mets-input3:checked ~ .check {
-    animation: outside 1s both;
-}
-#mets-input3:checked ~ .check i {
-    animation: icon 1s both;
-}
-
-#mets-input4:checked ~ .check {
-    animation: outside 1s both;
-}
-#mets-input4:checked ~ .check i {
-    animation: icon 1s both;
-}
-
-#mets-input5:checked ~ .check {
-    animation: outside 1s both;
-}
-#mets-input5:checked ~ .check i {
-    animation: icon 1s both;
-}
-
-#mets-input6:checked ~ .check {
-    animation: outside 1s both;
-}
-#mets-input6:checked ~ .check i {
-    animation: icon 1s both;
-}
-
-#mets-input7:checked ~ .check {
-    animation: outside 1s both;
-}
-#mets-input7:checked ~ .check i {
-    animation: icon 1s both;
-}
-
-#mets-input8:checked ~ .check {
-    animation: outside 1s both;
-}
-#mets-input8:checked ~ .check i {
-    animation: icon 1s both;
-}
-
-#mets-input9:checked ~ .check {
-    animation: outside 1s both;
-}
-#mets-input9:checked ~ .check i {
-    animation: icon 1s both;
-}
-
-#mets-input10:checked ~ .check {
-    animation: outside 1s both;
-}
-#mets-input10:checked ~ .check i {
-    animation: icon 1s both;
+.mets:active ~ .check i {
+    animation: icon 2s both;
 }
 
 @keyframes outside {
@@ -191,22 +94,25 @@ $container-delay: $spin-dur + $spin-delay;
         transform: translateX(0%);
         width: 25%;
     }
-    // 50%,80% {
-    //     transform: translateX(0%);
-    //     width: 25%;
-    // }
-    // 100% {
-    //     transform: translateX(100%);
-    //     width: 1%;
-    // }
+    50%,80% {
+        transform: translateX(0%);
+        width: 25%;
+    }
+    100% {
+        transform: translateX(100%);
+        width: 1%;
+    }
 }
 
 @keyframes icon {
     0% {
         transform: rotateZ(0deg);
     }
-    100% {
+    50%,80% {
         transform: rotateZ(360deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
     }
 }
 

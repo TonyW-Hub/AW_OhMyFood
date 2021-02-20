@@ -47,27 +47,6 @@
     }
 }
 
-// .spin {
-//     border-radius: 100%;
-//     width: 50px;
-//     height: 50px;
-//     position: absolute;
-//     top: 85px;
-//     left: 85px;
-//     background: radial-gradient($color-primary, $color-secondary);
-// }
-
-// .spin2 {
-//     border: 16px solid white;
-//     border-top: 16px solid $color-primary;
-//     border-bottom: 16px solid $color-secondary;
-//     border-right: 16px solid $color-primary;
-//     border-left: 16px solid $color-secondary;
-//     border-radius: 100%;
-//     width: 120px;
-//     height: 120px;
-// }
-
 .header {
     display: flex;
     justify-content: center;
@@ -116,7 +95,7 @@
     flex-direction: column;
     padding: 40px 0px;
     position: relative;
-    h1 {
+    h2 {
         @include title;
     }
     &__pad {
@@ -175,7 +154,7 @@
     padding-top: 40px;
     padding-bottom: 30px;
     background-color: $bg-light;
-    h1 {
+    h2 {
         @include title;
     }
     &__card {

@@ -120,8 +120,12 @@
         p {
             font-size: 1.1rem;
         }
-        i {
-            font-size: 23px;
+        .info-container {
+            .btn-like{
+                i {
+                    font-size: 23px;
+                }
+            }
         }
     }
     .footer {
@@ -208,8 +212,12 @@
             p {
                 font-size: 1.1rem;
             }
-            i {
-                font-size: 23px;
+            .info-container {
+                .btn-like{
+                    i {
+                        font-size: 23px;
+                    }
+                }
             }
         }
     }
@@ -297,8 +305,12 @@
             p {
                 font-size: 1.1rem;
             }
-            i {
-                font-size: 23px;
+            .info-container {
+                .btn-like{
+                    i {
+                        font-size: 23px;
+                    }
+                }
             }
         }
     }
@@ -406,9 +418,13 @@
             p {
                 font-size: 1.1rem;
             }
-            i {
-                font-size: 24px;
-                padding-left: 10px;
+            .info-container {
+                .btn-like{
+                    i {
+                        font-size: 24px;
+                        padding-left: 10px;
+                    }
+                }
             }
         }
     }

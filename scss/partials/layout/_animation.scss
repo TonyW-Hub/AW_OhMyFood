@@ -5,21 +5,22 @@
     }
 }
 
-#heart:checked ~ i {
-    animation: heart-fill 1s forwards;
-}
-
 @keyframes heart-fill {
     100% {
         transform-origin: top;
         background: linear-gradient($color-primary, $color-secondary);
-        background-clip: text;
+        background-clip: padding-box;
         -webkit-background-clip: text;
         color: transparent;
         font-weight: bold;
         cursor: pointer;
     }
 }
+
+#heart:checked ~ i {
+    animation: heart-fill 0.3s forwards;
+}
+
 
 // Anim loader accueil
 $spin-dur: 2s;
@@ -79,41 +80,53 @@ $container-delay: $spin-dur + $spin-delay;
 
 // Anim menu
 .mets:active ~ .check {
-    animation: outside 2.2s both;
+    animation: outside 1s forwards;
+}
+.mets:not(:active) ~ .check {
+    animation: outside-off 1s forwards;
 }
 .mets:active ~ .check i {
-    animation: icon 2s both;
+    animation: icon 1s forwards;
+}
+.mets:not(:active) ~ .check i {
+    animation: icon-off 0.5s forwards;
 }
 
 @keyframes outside {
-    0% {
+    from {
         transform: translateX(100%);
         width: 0%;
     }
-    100% {
+    to {
         transform: translateX(0%);
         width: 25%;
-    }
-    50%,80% {
-        transform: translateX(0%);
-        width: 25%;
-    }
-    100% {
-        transform: translateX(100%);
-        width: 1%;
     }
 }
-
+@keyframes outside-off {
+    from {
+        transform: translateX(0%);
+        width: 25%;
+    }
+    to {
+        transform: translateX(100%);
+        width: 0%;
+    }
+}
 @keyframes icon {
-    0% {
+    from {
         transform: rotateZ(0deg);
     }
-    50%,80% {
+    to {
         transform: rotateZ(360deg);
     }
-    100% {
-        transform: rotateZ(0deg);
+}
+@keyframes icon-off {
+    from {
+        transform: rotateZ(360deg);
     }
+    to {
+        transform: rotateZ(0deg);
+    }   
 }
 
 $num-pads: 10;
